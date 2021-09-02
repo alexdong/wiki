@@ -209,6 +209,8 @@ Error message and password prompt
 
 <li>Challenges - Switching major in China</li>
 
+<li>Challenges - XScale crash</li>
+
 <li>Cooking, food and swimming in the ocean</li>
 
 <li>Craftsmanship in developing a product</li>
@@ -235,11 +237,15 @@ Error message and password prompt
 
 <li>How does X work</li>
 
+<li>How I ended up in New Zealand - aka how I hacked NZ's immigration system</li>
+
 <li>interesting</li>
 
 <li>Iterate fast</li>
 
 <li>Make something people want</li>
+
+<li>Make tools that serve people, not replacing them</li>
 
 <li>Not interested in theorising</li>
 
@@ -10212,7 +10218,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210829121652219" list="Welcome honest" modified="20210829121652219" title="$:/StoryList">
+<div created="20210902034846037" list="Welcome interesting [[Challenges - XScale crash]] [[empower people]] [[Make tools that serve people, not replacing them]]" modified="20210902120010774" title="$:/StoryList">
 <pre></pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
@@ -10388,6 +10394,15 @@ The owner hated us- he changed the rules, normally get 3 lives, and we only had 
 <div created="20210829121013287" modified="20210829121023779" title="Challenges - Switching major in China">
 <pre>&quot;You had the knack for some crazy creative solutions. For example, many of us wanted to switch over to Computer Science but you were the only one in the whole university who figured out the sick leave solution. ... Then later on, getting a degree in Otago Polytech.&quot;</pre>
 </div>
+<div created="20210902120014221" modified="20210902120112094" title="Challenges - XScale crash">
+<pre>Back in 2000, for over 16 months, Intel couldn't sell their StrongARM/XScale CPU in the China, Taiwan and Japan market. After a successful installation, Windows NT will crash after a reboot. Engineers from Intel and ARM had looked into this but couldn't figure out why. 
+
+That was my first internship and I was intrigued by the challenge. I hooked up SoftICE, a kernel mode debugger, and went through the thick ARM v5 spec page-by-page (with the help of a English dictionary) to understand how the chip and the peripherals initialised themselves with the NT kernel. I didn't have access to the NT debug symbols, nor the driver source code. All I had was the assembly code from SoftICE. 
+
+It was both an intellectual challenge and a test on patience/confidence. The eureka moment came 3 months later. 
+
+It turns out that, during installation, the programmer wrote a unicode comma into the Windows Registry, but the kernel was expecting an ASCII one.</pre>
+</div>
 <div created="20210829121310420" modified="20210829121311696" title="Cooking, food and swimming in the ocean">
 <pre>- “You are my only male friend who also enjoy cooking and food.”
 - “You enjoy simple things in life.” (We went to swim under a sky full of morning stars when Auckland was asleep but the ocean was warm and waves gentle.)</pre>
@@ -10446,8 +10461,9 @@ I always loved photos, printed ones especially. I was going to a local photograp
 You have to have a USB disk and it is not very 21s century. That is when I thought, &quot;hey I know software&quot;, people can upload online, and they can fulfill that. The difference is quite stark: $1 or $1.50 vs  5 cents. Price difference is dramatic. If I can automate, what about 50 cents and the quality is so much better, wouldn’t that  be nice?       That was me finishing up the Pen Test. I really want something more meaningful, this is bad! The good thing about Pen testing that is pays so well and you don’t have to work for a long time.
 On the look out for something. Self sufficient.</pre>
 </div>
-<div created="20210829100415255" modified="20210829115828827" title="empower people">
-<pre>* [[Make tools that serve people]]
+<div created="20210829100415255" modified="20210902034859340" title="empower people">
+<pre>* [[How I ended up in New Zealand - aka how I hacked NZ's immigration system]]
+* [[Make tools that serve people, not replacing them]]
 * [[The right kind of market share &gt; higher profit margin or absolute market share]]
 * [[HappyMoose: We want to make the best for the most for the least]]</pre>
 </div>
@@ -10514,10 +10530,26 @@ Now constrained again by other things that don’t know.
   Want friction, but just enough balance       Now have a team, how to run money, frugal, financial planning.
        Process: Build from first principles, shape of a problem, how to read people. Bought in a pro (Anna) to help with company.</pre>
 </div>
-<div created="20210829095124400" modified="20210829121154602" title="interesting">
-<pre>* [[Challenges - computer games]]
+<div created="20210901234203865" modified="20210901234205635" title="How I ended up in New Zealand - aka how I hacked NZ's immigration system">
+<pre>How about hacking New Zealand Immigration Law?
+
+I'm not 100% sure this is hacking but it's very much along the time of understanding the inner working of the system and use its own features to get what you want.
+
+I tried to migrate to New Zealand or Australia back in 2009-2010. Our application was rejected by both countries. The reason was I don't have any qualification for the job I was doing. (Even though I've been doing software for 10 years by then, my Mechanical Engineering degree didn't quite cut it.)
+
+Luckily, when I visited NZ/AU, I gave technical talks to the local tech communities whenever I had a chance. Some of them were quite popular. For example, the one in Sydney was hosted at the local Google office.  I got to know decent number of people through this and we kept in touch on Twitter.
+
+When I received the rejection letter, I sent a ranty tweet, which was picked up and retweeted by a friend who was a connector in NZ. A lecturer in Otago Polytech saw her retweet and offered me a chance to get a Bachelor Degree in IT in one year, which was exactly what I need for immigration. 
+
+So I did my homework while working on my second startup trunk.ly. We sold trunk.ly to the YouTube founders the day before I graduated.
+
+With the newly minted IT degree, I managed to squeeze my immigration application through and became a kiwi citizen.</pre>
+</div>
+<div created="20210829095124400" modified="20210902120008640" title="interesting">
+<pre>* [[Challenges - Computer games]]
 * [[Challenges - Switching major in China]]
 * [[Challenges - Leaving China]]
+* [[Challenges - XScale crash]]
 * [[Why - Start from first principal]]
 * [[How does X work]]
 * [[The delights in seeing what's possible]]
@@ -10545,6 +10577,9 @@ Here's the answer: Do whatever's best for your users. You can hold onto this lik
 It's even the answer to questions that seem unrelated, like how to convince investors to give you money. If you're a good salesman, you could try to just talk them into it. But the more reliable route is to convince them through your users: if you make something users love enough to tell their friends, you grow exponentially, and that will convince any investor.
 
 &lt;&lt;&lt;</pre>
+</div>
+<div created="20210902034921177" modified="20210902034923548" title="Make tools that serve people, not replacing them">
+<pre>Parents, particularly mums, don't want automation. They want total control over their family photos. So the key shouldn't be &quot;hey, here are the best photos we've found for you&quot; that both Google and Apple are doing. Instead, they want &quot;here is a tool you can use to find out the best photos yourself.&quot;</pre>
 </div>
 <div created="20210829113346647" modified="20210829113349440" title="Not interested in theorising">
 <pre>Needed to learn English- reading and writing, listening.
